@@ -60,7 +60,7 @@ public class ExtractLinks {
 		        }
 		    }
 	
-		    stripper.extractRegions( page );
+		    stripper.extractRegions( page ); 
 	
 		    for( int j=0; j<annotations.size(); j++ )
 		    {

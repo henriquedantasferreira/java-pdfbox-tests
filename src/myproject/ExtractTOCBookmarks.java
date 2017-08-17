@@ -13,7 +13,7 @@ public class ExtractTOCBookmarks {
 	
 	public static void main( String[] args) throws Exception{
 		
-		PDDocument document = PDDocument.load(new File("/Users/henriqueferreira/Documents/PDFBoxDocuments/GDM.pdf"));
+		PDDocument document = PDDocument.load(new File("/Users/henriqueferreira/Documents/PDFBoxDocuments/test.pdf"));
 		FileInputStream file = null;
 		
 		try {
@@ -34,7 +34,7 @@ public class ExtractTOCBookmarks {
 			if(document != null) {
 				document.close();
 			}
-		}
+		} 
 		
 	}
 	

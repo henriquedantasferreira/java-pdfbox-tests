@@ -24,7 +24,7 @@ public class ExtractImages {
 	                File file = new File("/Users/henriqueferreira/Documents/PDFBoxImages/"+ System.nanoTime() + ".png");
 	                ImageIO.write(((org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject)o).getImage(), "png", file);
 	            }
-	        }
+	        } 
 	    }
 	    System.out.println("Images have been extracted successfully! Check your images folder.");
 	}

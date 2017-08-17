@@ -60,4 +60,4 @@ public class JBIG2Filter implements Filter
 		// TODO Auto-generated method stub
 		return false;
 	}
-}
+} 

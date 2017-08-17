@@ -9,12 +9,12 @@ public class ClipPDFPages {
 
 	public static void main( String[] args ) throws IOException
     {
-		PDDocument srcDoc = PDDocument.load(new File("/Users/henriqueferreira/Documents/PDFBoxDocuments/mediconsult.pdf"));	    
+		PDDocument srcDoc = PDDocument.load(new File("/Users/henriqueferreira/Documents/PDFBoxDocuments/relevant.pdf"));	    
 	    PDPageTree srcPages = srcDoc.getDocumentCatalog().getPages();
 	    
 	    //The first page is begin = 1 in this case we're extracting from page 2 to page 5 of the pdf
-	    PDDocument dstDoc = cutPages(2,5,srcPages);
-	    dstDoc.save(new File("/Users/henriqueferreira/Documents/PDFBoxDocuments/Clipped/mediconsult.pdf"));
+	    PDDocument dstDoc = cutPages(1,1,srcPages);
+	    dstDoc.save(new File("/Users/henriqueferreira/Documents/PDFBoxDocuments/Clipped/relevantnew.pdf"));
 	    dstDoc.close();
 	    srcDoc.close();
     }

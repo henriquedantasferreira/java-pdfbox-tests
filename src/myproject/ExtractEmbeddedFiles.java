@@ -23,7 +23,7 @@ public final class ExtractEmbeddedFiles
 	    	    PDPage page = doc.getPage(p);
 	    	    List<PDAnnotation> annotations = page.getAnnotations();
 	    	    for (PDAnnotation ann : annotations)
-	    	    {
+	    	    { 
 	    	        if ("RichMedia".equals(ann.getSubtype()))
 	    	        {
 	    	            COSArray array = (COSArray) ann.getCOSObject().getObjectFromPath("RichMediaContent/Assets/Names/");

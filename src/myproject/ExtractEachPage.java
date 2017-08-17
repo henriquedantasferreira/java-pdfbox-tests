@@ -19,7 +19,7 @@ public class ExtractEachPage {
 		System.out.println("Number of pages in this document is: "+ page_number);
 		//Instantiate PDFTextStripper class
 	    PDFTextStripper pdfStripper = new PDFTextStripper();
-	    
+	     
 		for(int i=1; i<=page_number;i++)
 		{
 			System.out.print("====== Page "+i+": =======\n");
